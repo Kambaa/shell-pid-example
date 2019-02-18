@@ -9,3 +9,7 @@ If status is passive
 then 
 if local proxy server is running from another instance, kill that instance (get pid from pid file)
 
+required: 
+* curl
+* sshpass
+* a running ssh-able linux
