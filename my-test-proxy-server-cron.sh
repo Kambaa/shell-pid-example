@@ -27,6 +27,11 @@ then
 	then
 	  PID=$(cat $PIDFILE)
 	  rm $PIDFILE
-	  kill -9 $PID
+	  if children="$(pgrep -P "$PID")"; then
+	  for child in $children; do
+            kill "$child"
+        done
+	fi
+	  kill $PID
 	fi
 fi
