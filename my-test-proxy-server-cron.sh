@@ -23,6 +23,9 @@ then
 		exit 1
 		fi
 	  	sshpass -p '<MY_PASSWORD>' ssh -D <MY_PORT> -q -C -N -p <MY_SSH_PORT> <MY_USERNAME>@><MY_SERVER_ADDRESS>
+		# optional - to share with lan, add -o GatewayPorts=yes
+		# sshpass -p 'Yg1234565' ssh -D 1337 -o GatewayPorts=yes -q -C -N -p 1986 pi@yusufgunduz.com.tr
+
 	fi
 fi
 
