@@ -1,4 +1,9 @@
 #!/bin/sh
+
+
+# cron example (runs every minute)
+# * * * * * /home/kambaa/Desktop/myProxyServer.sh > /home/kambaa/Desktop/myProxyServer.log
+
 PIDFILE=/home/kambaa/Desktop/myProxyServer.pid
 activeStatus="{\"status\":1}"
 passiveStatus="{\"status\":0}"
